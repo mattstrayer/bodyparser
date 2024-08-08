@@ -79,12 +79,11 @@
     "@poppinss/macroable": "^1.0.2",
     "@poppinss/multiparty": "^2.0.1",
     "@poppinss/utils": "^6.7.3",
-    "@types/qs": "^6.9.15",
     "bytes": "^3.1.2",
     "file-type": "^19.0.0",
     "inflation": "^2.1.0",
     "media-typer": "^1.1.0",
-    "qs": "^6.12.1",
+    "neoqs": "6.12.4",
     "raw-body": "^2.5.2"
   },
   "peerDependencies": {

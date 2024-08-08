@@ -9,7 +9,8 @@
 
 import raw from 'raw-body'
 import inflate from 'inflation'
-import qs, { IParseOptions } from 'qs'
+import * as qs from 'neoqs'
+
 import type { IncomingMessage } from 'node:http'
 import { BodyParserFormConfig } from '../types.js'
 
@@ -32,7 +33,7 @@ export async function parseForm(req: IncomingMessage, options: Partial<BodyParse
   /**
    * Shallow clone query string options
    */
-  const queryStringOptions: IParseOptions = Object.assign({}, normalizedOptions.queryString)
+  const queryStringOptions = Object.assign({}, normalizedOptions.queryString)
 
   /**
    * Mimicing behavior of
